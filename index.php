@@ -183,8 +183,10 @@ $annule_next=0;
                     
                 <div class="caption">
                  <h2><?php echo $livre['titre_livre'] ?></h2>
+                 <div class="expandable-text" id="textContainer">
                     <p><?php echo $livre['Paragraphe'] ?>"</p>
                   
+                </div>
                   <p><a href="consultation.php?ISBN=<?php echo $livre['ISBN'] ?>" class="btn btn-primary" role="button">Consulter</a> <?php if($_SESSION['connecter']==true && $livre['etat']==0 ){?><a href="consultation.php?ISBN=<?php echo $livre['ISBN'] ?>" class="btn btn-default" role="button">emprunter</a>
                       
                     
@@ -221,7 +223,15 @@ include('composant/footer.php');
 
 ?>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const textContainer = document.getElementById('textContainer');
 
+    textContainer.addEventListener('click', function () {
+      textContainer.classList.toggle('expanded');
+      });
+    });
+</script>
 </body>
 </html>
 
