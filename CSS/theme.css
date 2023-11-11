@@ -290,3 +290,13 @@ text-align: center;
 .rights .italic {
   font-style: italic;
 }
+.expandable-text {
+  max-height: 100px; /* Hauteur maximale initiale, ajustez selon vos besoins */
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Animation pour une transition en douceur */
+  cursor: pointer;
+}
+
+.expandable-text.expanded {
+  max-height: none; /* Agrandit la hauteur maximale pour afficher tout le texte */
+}
