@@ -15,7 +15,7 @@
     <div class="col-lg-4">
       <div class="propos">
         <h2 class="foo-headline">A propos</h2>
-        <p>Ce site a ete concu dans le cadre des mini projects asigner aux etudiants par leur proffesseurs Mr. M. Reda.<br><a href="admin/index.php">Administration</a>
+        <p<><a href="admin/index.php">Administration</a>
       </p>
         
       </div>
@@ -27,9 +27,7 @@
         <ul>
           <h2 class="foo-headline">Ce site est creer par:</h2>
 
-          <li><a herf="#">Youssef Faraby</a></li>
-          <li><a herf="#">Manar Bouhaddioui</a></li>
-          <li><a herf="#">Youssef Jabbari</a></li>
+          <li><a herf="#"></a></li>
         </ul>
       </div>  
 
@@ -37,10 +35,6 @@
     
 
 </div>
-<div class="rights" >
-  © 2016 copyrights to <span class="italic">FBJ</span>
-</div>
-
 
 <script type="text/javascript" src="CSS/bootstrap/js/bootstrap.min.js">
 </script>

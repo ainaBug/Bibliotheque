@@ -35,15 +35,6 @@ if(isset($_POST['emprunter'])){
 <script type="text/javascript"></script>
 </head>
 <body>
-<div class="jumbotron">
-      <div class="col-lg-8">
-          <span class="biblio-logo">Biblioweb<span class="dot">.JBF</span></span>
-      </div>
-      <div class="col-lg-4">
-          <div id="logoright">Bibliotheque du web</div>
-      </div>
-</div>
-
 <div class="border_page">
 	<h2>Livre</h2>
 	<hr>

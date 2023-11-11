@@ -19,18 +19,6 @@ include("modele/Client.php");
 </head>
 
 <body>
-
-
-
-
-<div class="jumbotron">
-      <div class="col-lg-8">
-          <span class="biblio-logo">Biblioweb<span class="dot">.JBF</span></span>
-      </div>
-      <div class="col-lg-4">
-          <div id="logoright">Bibliotheque du web</div>
-      </div>
-</div>
 <div class="col-lg-3">
 <nav id="navigation">
   <ul>

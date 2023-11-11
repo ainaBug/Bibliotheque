@@ -7,8 +7,6 @@ session_start();
 include("modele/Client.php");
 include("modele/Livre.php");
 
-
-
 if(isset($_GET['passer'])){
 
 if($_GET['passer']=='next'){
@@ -78,15 +76,6 @@ if(!empty($_POST['email']) AND !empty($_POST['pwd']))
 </head>
 
 <body>
-<div class="jumbotron">
-      <div class="col-lg-8">
-          <span class="biblio-logo">Biblioweb<span class="dot">.JBF</span></span>
-      </div>
-      <div class="col-lg-4">
-          <div id="logoright">Bibliotheque du web</div>
-      </div>
-</div>
-
 <div class="col-lg-6">
   <ul class="nav nav-pills nav1">
             <li class="active"><a href="index.php">Acceuil</a></li>
@@ -124,7 +113,7 @@ if(!empty($_POST['email']) AND !empty($_POST['pwd']))
  <div class="col-lg-5">
  <ul class="nav nav-pills">
       <li class="active"><a href="profil.php" >Profile</a></li>
-      <li><a href="index.php?d=true" >Deconnecter</a></li>
+      <li id="deconnect"><a href="index.php?d=true" >Deconnecter</a></li>
  
   </ul>
 
@@ -137,7 +126,7 @@ if(!empty($_POST['email']) AND !empty($_POST['pwd']))
   </div> 
 </div>
 
-<div class="row">
+<div class="row" id="body">
 
 <?php
 include('composant/menu.php');
@@ -183,16 +172,17 @@ $annule_next=0;
                     
                 <div class="caption">
                  <h2><?php echo $livre['titre_livre'] ?></h2>
+
                  <div class="expandable-text" id="textContainer">
                     <p><?php echo $livre['Paragraphe'] ?>"</p>
-                  
                 </div>
-                  <p><a href="consultation.php?ISBN=<?php echo $livre['ISBN'] ?>" class="btn btn-primary" role="button">Consulter</a> <?php if($_SESSION['connecter']==true && $livre['etat']==0 ){?><a href="consultation.php?ISBN=<?php echo $livre['ISBN'] ?>" class="btn btn-default" role="button">emprunter</a>
+
+                <p><a href="consultation.php?ISBN=<?php echo $livre['ISBN'] ?>" class="btn btn-primary" role="button">Consulter</a> <?php if($_SESSION['connecter']==true && $livre['etat']==0 ){?><a href="consultation.php?ISBN=<?php echo $livre['ISBN'] ?>" class="btn btn-default" role="button">emprunter</a>
                       
                     
                       
                       
-                      <?php } ?></p>
+                  <?php } ?></p>
                 </div>
               </div>
             </div>

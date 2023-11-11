@@ -20,15 +20,6 @@ if(!isset($_SESSION['connecter']))
 </head>
 
 <body>
-
-<div class="jumbotron">
-      <div class="col-lg-8">
-          <span class="biblio-logo">Biblioweb<span class="dot">.JBF</span></span>
-      </div>
-      <div class="col-lg-4">
-          <div id="logoright">Bibliotheque du web</div>
-      </div>
-</div>
 <div class="col-lg-6">
   <ul class="nav nav-pills">
             <li><a href="index.php">Acceuil</a></li>
