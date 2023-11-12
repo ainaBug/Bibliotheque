@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 11 nov. 2023 à 09:27
+-- Généré le : dim. 12 nov. 2023 à 22:02
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.0.28
 
@@ -43,16 +43,9 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id_client`, `nom_client`, `Email`, `date_naissance`, `adresse`, `Nb_emprunt`, `Date_inscription`, `MDP`) VALUES
-(1, 'youssef', 'Jalil_Jerf@email.com', '1995-10-31', 'youssef', 3, '2016-02-01', 'youssef'),
-(2, 'Dadso', 'Haitham_Dadso@email.com', '1995-06-15', 'LAAAAAATER', 0, '2015-12-31', 'Seeerfie'),
-(3, 'Faraby', 'Yusuf_Faraby@email.com', '1994-12-25', 'Boulevard Bouchaib Doukali Num 15, Casablanca', 0, '2016-03-01', 'FarFar'),
-(4, 'JY-7', 'Youssef7jabbari@email.com', '1995-10-31', 'Boulevard El Fida Num 9, Casablanca', 5, '2007-07-07', 'ZarakiDono'),
-(5, 'Nkir', 'Dounia_Nkir@email.com', '1994-04-24', 'Boulevard Boulevard Num N, Casablanca', 0, '2016-03-21', 'NkirNkir'),
-(6, 'Mellouki', 'Zakaria_Mellouki', '1995-09-19', 'Boulevard BLVRD Num N, Casablanca', 0, '1995-09-19', 'JESUISZAK'),
-(8, 'youssef', 'Youssef.Faraby13', '2016-04-28', 'youssef', 0, NULL, 'youssef'),
-(9, 'youssef faraby', 'youssef@faraby.com', '2016-04-06', 'boulvar & 1', 0, '2016-04-17', '1234567'),
-(10, 'bouhaddioui', 'manar@gmail.com', '1995-06-11', 'boulvard la resistance ', 1, '2016-04-22', '123456789'),
-(11, 'Hidan', 'kill_yourself@email.com', '1986-06-06', 'machi so9ek ^^', 0, '2016-05-03', 'kill');
+(12, 'bruno', 'bruno@gmail.com', '2000-01-15', 'andravohangy', 2, '2023-11-12', 'bruno'),
+(13, 'test1', 'test@gmail.com', '1998-06-26', 'ampasapito', 0, '2023-11-12', 'test'),
+(14, 'Client1', 'aina12@gmail.com', '2001-02-28', 'antsakaviro', 2, '2023-11-12', '12345');
 
 --
 -- Index pour les tables déchargées
@@ -73,7 +66,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT pour la table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id_client` int(99) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_client` int(99) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
